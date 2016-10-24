@@ -1,3 +1,23 @@
+body {
+  background: url("./weather.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+table {
+  color: white !important;
+}
+
+.weatherTableHead {
+  background: rgba(115, 75, 75, .6) !important
+}
+
+.weatherRow {
+  background: rgba(115, 75, 75, .6) !important
+}
+
 .input-group {
   margin: 20px 0px;
 }
@@ -5,4 +25,11 @@
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
+}
+
+td:first-of-type {
+  height: 200px;
+  width: 250px;
+  min-height: 200px;
+  min-height: 250px;
 }
