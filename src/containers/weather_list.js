@@ -25,7 +25,7 @@ class WeatherList extends Component {
     const { lon, lat } = cityData.city.coord;
 
     return (
-      <tr className="weatherRow" key={colorGen()}>
+      <tr className="weatherRow" key={colorGen}>
       <td><GoogleMap lon={lon} lat={lat}/></td>
       <td><Chart data={temps} color="red" units="F Average" /></td>
       <td><Chart data={preasures} color="green" units="hPa Average" /></td>

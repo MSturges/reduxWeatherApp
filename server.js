@@ -3,8 +3,6 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-// var api = require('./routes/api');
-
 var app = express();
 
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -13,7 +11,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// app.use('/', api);
 
 app.all('*', function(req,res,next) {
   res.sendFile('index.html', { root: __dirname + '/dist/' })

@@ -24053,7 +24053,7 @@
 
 	      return _react2.default.createElement(
 	        'tr',
-	        { className: 'weatherRow', key: colorGen() },
+	        { className: 'weatherRow', key: colorGen },
 	        _react2.default.createElement(
 	          'td',
 	          null,
@@ -41608,9 +41608,12 @@
 	  var action = arguments[1];
 
 	  switch (action.type) {
+
 	    case _index.FETCH_WEATHER:
+
 	      return [action.payload.data].concat(_toConsumableArray(state));
 	  }
+
 	  return state;
 	};
 
